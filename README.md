@@ -1,1 +1,1 @@
-# royal-stock
+royal stock

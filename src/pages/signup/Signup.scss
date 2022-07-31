@@ -1,0 +1,74 @@
+#Signup-page {
+    position: relative;
+    padding: 1rem 1rem 5rem 1rem;
+
+    p, em {
+        font-size: 0.5rem;
+        color: #ffffff;
+        display: flex;
+        gap: 3px;
+    }
+    span{
+        color: #231955;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .Signup-page__card {
+        background: #231955;
+        color: #ffffff;
+        width: 50%;
+        height: 15rem;
+        padding: 1rem;
+
+        h4{
+            font-size: 10px;
+        }
+
+    }
+
+    .Signup-page__form-container {
+        background: #918CAA;
+        border-radius: 20px;
+        width: 60%;
+        position: absolute;
+        right: 10%;
+        top: 5rem;
+
+        form{
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 0.5rem;
+
+            .input{
+                width: 100%;
+                padding: 0.2rem;
+
+            }
+
+
+            .form-input{
+                display: flex;
+                gap: 20px;
+            }
+        }
+
+        .form-btn{
+            display: flex;
+
+            button {
+                margin-left: auto;
+                background: #231955;
+                cursor: pointer;
+                color: #ffffff;
+                padding: 2px 7px;
+
+                &:hover{
+                    filter: invert(10%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+#card-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        color: #231955;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,43 @@
+.faq-dash {
+    background: url("../../assets/faq-dash.png");
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    h6 {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 600;
+
+
+    }
+
+}
+
+
+.drops {
+    // padding: 1rem;
+
+    .drops-container {
+        border: 0.7px solid rgba(0, 0, 0, 0.3);
+        position: relative;
+        width: 100%;
+        padding: 0.5rem;
+
+
+        .menu {
+            position: absolute;
+            top: 0;
+            right: 5px;
+
+        }
+
+    }
+
+}

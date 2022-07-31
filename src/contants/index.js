@@ -1,0 +1,1 @@
+export { default as AllPhotos } from "./images/images";

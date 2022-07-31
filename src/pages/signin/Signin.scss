@@ -1,0 +1,128 @@
+#signin {
+    background: #ffffff;
+
+    .signin-image__dash {
+        width: 100%;
+        max-height: 40vh;
+        position: relative;
+
+        img {
+            width: 100%;
+            max-height: 40vh;
+        }
+
+
+        .signin-image__key {
+            width: 40%;
+            background: #231955;
+            // height: 100%;
+
+            border: 0.1px solid #FFFFFF;
+
+            border-radius: 20px;
+            position: absolute;
+            bottom: -30px;
+            left: 30%;
+            margin-right: auto;
+            padding: 1rem;
+
+            img {
+                width: 24px;
+            }
+        }
+
+        .signin-image__key2 {
+            background: #483F71;
+            bottom: -35px;
+            left: 31%;
+            box-shadow: 0 5px 5px #483F71;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .signin-form-section {
+        margin-top: 4rem;
+        background: #B6B2C6;
+        width: 100%;
+        padding: 2rem;
+
+        .signin-form__container {
+            background: #D9D9D9;
+            border-radius: 20px;
+            padding: 2rem;
+            width: 70%;
+            margin: auto;
+
+            form {
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 10px;
+                // display: flex;
+                // flex-direction: column;
+
+                input {
+                    margin-bottom: 1rem;
+                    padding: 0.5rem;
+                    background: #483F71;
+                }
+
+                em {
+                    color: #231955;
+                    cursor: pointer;
+                }
+
+                .btn-container {
+                    margin-left: auto;
+
+                    button {
+                        padding: 5px 10px;
+                        background: #231955;
+                        color: #ffffff;
+                        cursor: pointer;
+                        border-radius: 20px;
+
+                        &:hover {
+                            filter: invert(10%);
+                        }
+                    }
+
+
+                }
+
+            }
+
+            .signin-form__signup-section {
+                border-top: 1px solid #ffffff;
+                width: 60%;
+                text-align: center;
+                margin: 1rem auto;
+                padding: 0.5rem;
+
+                p{
+                    color: #231955;
+                }
+
+                button {
+                    margin-top: 0.5rem;
+                    padding: 5px 10px;
+                    background: #231955;
+                    color: #ffffff;
+                    cursor: pointer;
+                    border-radius: 20px;
+
+                    &:hover {
+                        filter: invert(10%);
+                    }
+                }
+
+
+            }
+        }
+
+
+
+    }
+}
