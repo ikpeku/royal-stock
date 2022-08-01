@@ -6,16 +6,17 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-            <header className="bg-[#D3D1DD] home-navbar h-[132px]">
+            <header className="bg-[#D3D1DD] home-navbar md:h-[132px]">
                 <div className="max-w-screen-xl px-4 xl:px-0 mx-auto">
                     <div className="flex justify-between pt-4">
                         <div className='logo-section'>
                             <span className="sr-only">Logo</span>
-                            <Link to='/'><img src={AllPhotos.Logo} alt="royal stock logo" /></Link>
+                            <Link to='/'>
+                                <img className="w-[50%] pb-6 md:pb-0 md:w-full" src={AllPhotos.Logo} alt="royal stock logo" /></Link>
                         </div>
 
-                        <div className="relative link-section w-[60%] grid">
-                            <div className="flex justify-end translator-div w-full">
+                        <div className="link-section md:w-[60%] md:grid">
+                            <div className="hidden md:flex justify-end translator-div w-full">
                                 <div id='translator'></div>
                             </div>
 
@@ -47,7 +48,7 @@ const Navbar = () => {
                                 </ul>
                             </nav>
 
-                            <div className="block md:hidden flex justify-end">
+                            <div className="block md:hidden flex justify-end pt-3">
                                 <button
                                     className="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75"
                                 >
