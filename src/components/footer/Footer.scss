@@ -1,11 +1,12 @@
 #footer {
     background: #0C081C;
-    padding: 3px 1px;
-    max-height: 100px;
+    padding: 3px 3px;
+    //max-height: 100px;
 
     .footer-container {
-        border-top: 1px solid #231955;
+        border-top: 4px solid #231955;
         display: flex;
+        margin-top: 2rem;
 
         .footer-container__left {
             flex: 0.5;
@@ -14,16 +15,13 @@
             padding: 0.5rem;
 
             img {
-                width: 100%;
-                max-width: 60px;
                 margin: 0.3rem 0;
-                
             }
 
             p {
                 color: #ffffff;
-                font-size: 6px;
-                line-height: 10px;
+                font-size: 24px;
+                //line-height: 10px;
 
                 span {
                     color: #FFF80A;
@@ -39,15 +37,14 @@
             
 
             .footer-container__right-contain {
-                border-left: 1px solid #231955;
+                border-left: 4px solid #231955;
                 margin-top: 0.2rem ;
                 padding: 0 0.5rem;
 
 
                 p {
                     color: #ffffff;
-                    font-size: 7px;
-                    line-height: 9px;
+                    font-size: 24px;
                     letter-spacing: 0.03em;
 
                     span {
@@ -77,16 +74,8 @@
                     &:last-child {
                         padding-top: 2px;
                     }
-
                 }
             }
-
         }
-
-
     }
-
-
-
-
 }
