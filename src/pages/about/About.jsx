@@ -10,8 +10,8 @@ const About = () => {
   return (
     <div id='about-page'>
 
-      <div className='About-image__dash'>
-        <img src={AllPhotos.aboutDash} alt="dash-board" />
+      <div className='About-image__dash w-full h-100 min-h-full'>
+        <img src={AllPhotos.aboutDash} alt="dash-board" className='w-full' />
         <div className='contact-modal'>
           <p>-ABOUT US-</p>
         </div>
@@ -19,7 +19,7 @@ const About = () => {
 
       <div className="video-section">
         <div>
-          <iframe src={AllPhotos.tradeVideo} frameborder="0" max-width="600" allow='autoplay; encryted-media' title='market mark' allowFullScreen>
+          <iframe src={AllPhotos.tradeVideo} frameborder="0" max-width="1600" allow='autoplay; encryted-media' title='market mark' allowFullScreen>
           </iframe>
         </div>
         <div>
@@ -33,7 +33,7 @@ const About = () => {
             and financial objectives in life and
             generations to come.
           </p>
-          <Link to="/"><button>Our Servives < BsArrowRight /></button></Link>
+          <Link to="/"><button>Our Servives < BsArrowRight  size={30}/></button></Link>
 
         </div>
 
@@ -81,7 +81,7 @@ const About = () => {
         <p className='title'>Why choose us to manage your investment </p>
         <div className='investment-section'>
 
-          <Card logo={<MdTrendingUp color='#1F4690' />} text="Consistent Growth" className="card1" />
+          <Card logo={<MdTrendingUp color='#1F4690' />} text="Consistent Growth" className="card1" size={200} />
           <Card logo={<BsCash color='#1F4690' />} text="Lower fees" className="card1" />
           <Card logo={< MdOutlinePersonalInjury color='#1F4690' />} text="Personalized Portfolio" className="card1" />
           <Card logo={<BsGlobe color='#1F4690' />} text="Globally Located" className="card1" />
@@ -105,13 +105,13 @@ const About = () => {
           </p>
         </div>
 
+        <div className="img-container">
+          <img src={AllPhotos.imgcontain} alt="Bharat Masrani" />
+        </div>
         <h6>
           Bharat Masrani, <br />
           BOARD MEMBER
         </h6>
-        <div className="img-container">
-          <img src={AllPhotos.imgcontain} alt="Bharat Masrani" />
-        </div>
       </div>
 
 
@@ -148,7 +148,6 @@ Trusting markets to do what they do best—drive information into prices—frees
       </div>
 
         <div className='questionaire'>
-          {/* <img src={AllPhotos.aboutFooter} alt="footer dash board" /> */}
           <div className='questionaire-btn'>
             <h4>DO YOU STILL WANT TO ASK QUESTION?</h4>
             <Link to="/contact"><button>Contact us</button></Link>

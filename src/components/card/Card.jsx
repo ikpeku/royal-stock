@@ -1,12 +1,12 @@
 import React from 'react';
 import "./Card.scss";
 
-const Card = ({ logo, text , className }) => {
+const Card = ({ logo, text, className }) => {
   return (
     <div id='card-holder' className={className}>
-      
-      <p>{logo} <br />{text}</p>
 
+      <em>{logo}</em>
+      <p>{text}</p>
 
     </div>
   )

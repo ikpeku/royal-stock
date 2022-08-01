@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <textarea name="" id="" cols="10" rows="3" placeholder='Message' value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
+            <textarea name="" id="" cols="10" rows="5" placeholder='Message' value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
           </div>
 
 
@@ -75,7 +75,7 @@ const Contact = () => {
         <div className='contact-location'>
 
           <div className='single-sub-child'>
-            <BsGeoAlt color='#1F4690' size={12} />
+            <BsGeoAlt color='#1F4690' size={20} />
             <div>
               <p>
                 <span>Visit Us: </span> <br />
@@ -86,7 +86,7 @@ const Contact = () => {
 
 
           <div className='single-sub-child'>
-            <BsPhone color='#1F4690' size={12} />
+            <BsPhone color='#1F4690' size={20} />
             <div>
               <p>
                 <span>Feel Like Talking</span> <br />
@@ -97,7 +97,7 @@ const Contact = () => {
 
           <div className='single-sub-child'>
             {/* <img src={AllPhotos.Phone} alt="mobile logo" /> */}
-            <BsEnvelope color='#1F4690' size={12} />
+            <BsEnvelope color='#1F4690' size={20} />
             <div>
               <p>
                 <span>Need Help?</span> <br />

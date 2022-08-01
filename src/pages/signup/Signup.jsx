@@ -18,47 +18,49 @@ const Signup = () => {
 
 
   return (
-    <div id='Signup-page'>
-      <div className='Signup-page__card'>
-        <h4>
-          CREATE ACCOUNT AND <br />
-          START YOUR JOURNEY <br />
-          TO FINANCIAL FREEDOM <br />
-        </h4>
+    <div id='Signup-page_anchor'>
+      <div id='Signup-page'>
+        <div className='Signup-page__card'>
+          <h4>
+            CREATE ACCOUNT AND
+            START YOUR JOURNEY
+            TO FINANCIAL FREEDOM
+          </h4>
 
-      </div>
+        </div>
 
-      <div className='Signup-page__form-container'>
+        <div className='Signup-page__form-container'>
 
-        <form action="" onSubmit={handleSubmit}>
-          <div>
-            <h6>Sign Up</h6>
-            <p>It is quick and easy</p>
-          </div>
-          <div className='form-input'>
-            <input className='input' type="text" placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-            <input className='input' type="text" placeholder='Last name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
-          </div>
-          <div>
-            <input className='input' type="email" name="" id="" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
-          </div>
-          <div>
-            <input className='input' type="password" name="" id="" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
-          </div>
-          <div>
-            <input className='input' type="password" name="" id="" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
-          </div>
-          <div>
+          <form action="" onSubmit={handleSubmit}>
             <div>
-              <span><input type="checkbox" name="" id="" /> <em>I’m not a ROBBOT</em></span>
+              <h6>Sign Up</h6>
+              <p>It is quick and easy</p>
             </div>
-            <p>By clicking on sign up, You agree to our <Link to="#"><span> Privacy policies.</span></Link></p>
-          </div>
-          <div className='form-btn'>
-            <button>Sign Up</button>
-          </div>
-        </form>
+            <div className='form-input'>
+              <input className='input' type="text" placeholder='First name' value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+              <input className='input' type="text" placeholder='Last name' value={lastName} onChange={(e) => setLastName(e.target.value)} />
+            </div>
+            <div>
+              <input className='input' type="email" name="" id="" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+            <div>
+              <input className='input' type="password" name="" id="" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+            <div>
+              <input className='input' type="password" name="" id="" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+            </div>
+            <div>
+              <div>
+                <span><input type="checkbox" name="" id="checkbox" size={50} /> <em>I’m not a ROBBOT</em></span>
+              </div>
+              <p>By clicking on sign up, You agree to our <Link to="#"><span> Privacy policies.</span></Link></p>
+            </div>
+            <div className='form-btn'>
+              <button>Sign Up</button>
+            </div>
+          </form>
 
+        </div>
       </div>
     </div>
   )
