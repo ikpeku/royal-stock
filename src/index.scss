@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,8 @@
   list-style-type: none;
   outline: none;
   border: none;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -15,7 +20,18 @@
   display: none !important;
 }
 
+.goog-te-gadget-simple {
+  height: 35px;
 
+}
+.goog-te-menu-value {
+  font-weight: 800;
+  //font-size: 24px;
+  font-size: 20px !important;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  padding-top: 5px;
+}
 
 .goog-tooltip {
     display: none !important;
@@ -29,15 +45,25 @@
     border: none !important;
     box-shadow: none !important;
 }
+.goog-te-gadget {
+  font-family: Roboto, 'Open Sans', sans-serif !important;
+  text-transform: capitalize !important;
+  font-size: 9px;
+}
 
-body {
-    top: 0 !important;
-} 
+.goog-te-menu-value {
+  color: #555555 !important;
 
-
-
-
-
+  &:before {
+    background-color: #555555 !important;
+    // font-family: 'Material Icons';
+    // content: "\E927";
+    margin-right: 16px !important;
+    font-size: 0.1rem !important;
+    vertical-align: -10px;
+    width: 32px !important;
+  }
+}
 
 
 
