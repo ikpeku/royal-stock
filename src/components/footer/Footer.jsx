@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div id='footer'>
       <div className="footer-container">
-        <div className="footer-container__left">
+        <div className="footer-container__left mt-10">
           <div id='translator2'>
             <a href="#translator">
               <select name="" id="" defaultValue="language">
@@ -19,14 +19,14 @@ const Footer = () => {
               </select>
             </a>
           </div>
-          <Link to='/'><img src={AllPhotos.Logo} alt="royal stock logo" /></Link>
+          <Link to='/' className="my-10"><img src={AllPhotos.Logo} className="w-[50%]" alt="royal stock logo" /></Link>
           <p>Copyright © 2015 <span>Royal Stock Shell.</span><br />All Rights Reserved</p>
 
         </div>
-        <div className="footer-container__right">
+        <div className="footer-container__right pb-10">
           <div className="footer-container__right-contain">
-            <div className='double-sub'>
-              <div className='double-sub-child'>
+            <div className='double-sub mt-10'>
+              <div className='double-sub-child pl-10'>
                 <p>
                   <span>Financial News</span> <br />
                   Financial Times <br />
@@ -46,8 +46,8 @@ const Footer = () => {
             </div>
             <div className='single-sub'>
 
-              <div className='single-sub-child'>
-              <BsGeoAlt color='#1F4690' size={8} />
+              <div className='single-sub-child mt-10'>
+              <BsGeoAlt color='#1F4690' size={40} />
                 <div>
                   <p>
                     <span>Our Office :</span> <br />
@@ -55,8 +55,8 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className='single-sub-child'>
-                <BsPhone color='#1F4690' size={8} />
+              <div className='single-sub-child mt-8'>
+                <BsPhone color='#1F4690' size={40} />
                 <div>
                   <p>
                     <span>+447451287990</span> <br />

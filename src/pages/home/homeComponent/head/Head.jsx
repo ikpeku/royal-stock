@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import HomeImage from '../../../../assets/home.png';
 
 
-
 const Head = () => {
     return (
     <section className="relative bg-white">
