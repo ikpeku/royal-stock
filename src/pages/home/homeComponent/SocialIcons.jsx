@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const SocialIcons = () => {
     return (
         <section>
-            <div className="max-w-screen-2xl mx-auto">
+            <div className="max-w-screen-2xl mx-auto py-8">
 
                 <div className="max-w-[15rem] md:max-w-lg mx-auto pb-10 flex justify-between">
                     <Link to="/signin">

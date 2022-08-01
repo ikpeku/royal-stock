@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const GetInTouchBanner = () => {
     return (
-        <section>
+        <section className="mt-10 md:mt-20">
             <div className="max-w-[15rem] md:max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto xl:py-16 relative">
 
                 <div className="text-center bg-[#231955] max-w-full md:max-w-2xl mx-auto">

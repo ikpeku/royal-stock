@@ -2,7 +2,6 @@ import React from 'react';
 import WeSetThePaceImg from "../../../assets/office-gist.png";
 
 
-
 const WeSetThePace = () => {
     return (
     <section>
