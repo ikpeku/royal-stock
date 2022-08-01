@@ -13,7 +13,7 @@ const Head = () => {
         <div
             className="hidden sm:block sm:inset-0 sm:absolute"></div>
 
-        <div className="relative max-w-screen-xl px-4 py-32 mx-auto lg:h-[80vh] lg:items-center lg:flex">
+        <div className="relative max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto py-32 lg:h-[90vh] lg:items-center lg:flex">
             <div className="max-w-3xl text-center sm:text-left">
                 <h1 className="text-3xl font-extrabold sm:text-5xl tracking-[0.05em] text-[#FFF80A]">
                     SECURED <span className="text-white">CRYPTOCURRENCY</span> TRADING COMPANY

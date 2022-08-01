@@ -7,7 +7,7 @@ import { NavLink, Link } from 'react-router-dom';
 const Navbar = () => {
     return (
             <header className="bg-[#D3D1DD] home-navbar md:h-[132px]">
-                <div className="max-w-screen-xl px-4 xl:px-0 mx-auto">
+                <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto">
                     <div className="flex justify-between pt-4">
                         <div className='logo-section'>
                             <span className="sr-only">Logo</span>
