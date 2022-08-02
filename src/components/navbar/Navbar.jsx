@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { AllPhotos } from '../../contants';
 import "./Navbar.scss"
 import { NavLink, Link } from 'react-router-dom';
-import { FiX } from "react-icons/fi";
+import { FiHome, FiMail, FiX } from "react-icons/fi";
+
 
 
 const Navbar = () => {
@@ -10,14 +11,15 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false)
 
     return (
-        <header className="bg-[#D3D1DD] home-navbar md:h-[132px]">
-            <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto">
+        <header className="bg-[#D3D1DD] home-navbar md:h-[132px] relative">
+            <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto ">
                 <div className="flex justify-between pt-4">
-                    
+
                     <div className='logo-section'>
                         <span className="sr-only">Logo</span>
-                        <Link to='/'>
-                            <img className="w-[50%] pb-6 md:pb-0 md:w-full" src={AllPhotos.Logo} alt="royal stock logo" /></Link>
+                        {!toggle && <Link to='/'>
+                            <img className="w-[50%] pb-6 md:pb-0 md:w-full" src={AllPhotos.Logo} alt="royal stock logo" />
+                        </Link>}
                     </div>
 
                     <div className="link-section flex justify-end w-full md:w-[60%] md:grid relative">
@@ -27,7 +29,7 @@ const Navbar = () => {
                         </div>
 
                         <nav className="hidden md:block" aria-labelledby="header-navigation">
-                            <h2 className="sr-only" id="header-navigation"></h2>
+                            {/* <h2 className="sr-only" id="header-navigation"></h2> */}
 
                             <ul className="flex justify-between items-end gap-6 h-full ">
                                 <li>
@@ -87,41 +89,81 @@ const Navbar = () => {
                             </div>
                         }
 
-                        {
-                            toggle && <div className='w-full mt-12 absolute z-10'>
 
-                                    <ul className="flex flex-col justify-end items-end gap-6 h-full">
-                                        <li>
-                                            <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : "not-active"} onClick={() => setToggle(false)}>
-                                                Home
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/about"
-                                                className={({ isActive }) => isActive ? "active-link" : "not-active"}
-                                            >About</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/faq"
-                                                className={({ isActive }) => isActive ? "active-link" : "not-active"}
-                                            >FAQ</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/contact"
-                                                className={({ isActive }) => isActive ? "active-link" : "not-active"}
-                                            >Contact</NavLink>
-                                        </li>
-
-                                    </ul>
-
-
-                            </div>
-                        }
 
 
                     </div>
                 </div>
             </div>
+
+
+            {
+                toggle && <div className="min-h-screen bg-gray-100 absolute z-50 w-1/2" onClick={() => setToggle(false)}>
+                    <div className="flex h-screen flex-col justify-between pt-2 pb-6">
+                        <div>
+                            <div className="w-max p-2.5">
+                                <Link to="/" >
+                                    <img src={AllPhotos.Logo} alt="royal stock logo" className="w-32" />
+                                </Link>
+                            </div>
+                            <ul className="mt-6 space-y-2 tracking-wide">
+                                <li className="min-w-max">
+                                    <NavLink to="/" aria-label="dashboard"
+
+                                        className={({ isActive }) => isActive ? "relative flex items-center space-x-4 bg-gradient-to-r from-sky-600 to-cyan-400 px-4 py-3 text-white"
+                                            : "bg group flex items-center space-x-4 rounded-full px-4 py-3 text-gray-600"
+                                        }
+                                        onClick={() => setToggle(false)}>
+
+                                        <FiHome />
+                                        <span className="-mr-1 font-medium">Home</span>
+                                    </NavLink>
+                                </li>
+                                <li className="min-w-max">
+                                    <NavLink to="/about"
+                                        className={({ isActive }) => isActive ? "relative flex items-center space-x-4 bg-gradient-to-r from-sky-600 to-cyan-400 px-4 py-3 text-white"
+                                            : "bg group flex items-center space-x-4 rounded-full px-4 py-3 text-gray-600"
+                                        }
+                                        onClick={() => setToggle(false)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path className="fill-current text-gray-300 group-hover:text-cyan-300" fill-rule="evenodd" d="M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z" clip-rule="evenodd" />
+                                            <path className="fill-current text-gray-600 group-hover:text-cyan-600" d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z" />
+                                        </svg>
+                                        <span className="group-hover:text-gray-700">About</span>
+                                    </NavLink>
+                                </li>
+                                <li className="min-w-max">
+                                    <NavLink to="/faq"
+                                        className={({ isActive }) => isActive ? "relative flex items-center space-x-4 bg-gradient-to-r from-sky-600 to-cyan-400 px-4 py-3 text-white"
+                                            : "bg group flex items-center space-x-4 rounded-full px-4 py-3 text-gray-600"
+                                        }
+                                        onClick={() => setToggle(false)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path className="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd" />
+                                            <path className="fill-current text-gray-300 group-hover:text-cyan-300" d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                                        </svg>
+                                        <span className="group-hover:text-gray-700">FAQ</span>
+                                    </NavLink>
+                                </li>
+                                <li className="min-w-max">
+                                    <NavLink to="/contact"
+                                        className={({ isActive }) => isActive ? "relative flex items-center space-x-4 bg-gradient-to-r from-sky-600 to-cyan-400 px-4 py-3 text-white"
+                                            : "bg group flex items-center space-x-4 rounded-full px-4 py-3 text-gray-600"
+                                        }
+                                        onClick={() => setToggle(false)}>
+                                        <FiMail />
+                                        <span className="group-hover:text-gray-700">Contact</span>
+                                    </NavLink>
+                                </li>
+
+                            </ul>
+                        </div>
+                     
+                    </div>
+                </div>
+            }
+
+
         </header>
 
     )

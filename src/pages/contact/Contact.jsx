@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { AllPhotos } from '../../contants';
 import "./Contact.scss"
-// import { Link } from 'react-router-dom';
 import { BsEnvelope, BsPhone, BsGeoAlt } from "react-icons/bs";
-import { Social } from '../../components';
+
 
 const Contact = () => {
 
@@ -101,7 +100,7 @@ const Contact = () => {
             <div>
               <p>
                 <span>Need Help?</span> <br />
-                support@royalstockshell.com
+                support@royalstock-shell.com
               </p>
             </div>
           </div>
@@ -111,7 +110,6 @@ const Contact = () => {
 
       </div>
       
-      <Social />
     </div>
   )
 }

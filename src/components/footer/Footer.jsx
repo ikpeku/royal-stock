@@ -66,12 +66,12 @@ const Footer = () => {
             Legal
           </li>
           <li>
-            <Link to='/' className="">
+            <Link to='/agreement' className="">
               Agreement
             </Link>
           </li>
           <li>
-            <Link to='/' className="">
+            <Link to='/faq' className="">
               FAQ
             </Link>
           </li>
@@ -100,7 +100,7 @@ const Footer = () => {
           <div className="ml-2 md:ml-8">
             <p>
               <span>+447451287990</span> <br />
-              support@royalstockshell.com
+              info@royalstock-shell.com
             </p>
           </div>
         </div>

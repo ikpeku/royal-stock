@@ -22,7 +22,6 @@
 
 .goog-te-gadget-simple {
   height: 35px;
-
 }
 .goog-te-menu-value {
   font-weight: 800;
@@ -56,8 +55,6 @@
 
   &:before {
     background-color: #555555 !important;
-    // font-family: 'Material Icons';
-    // content: "\E927";
     margin-right: 16px !important;
     font-size: 0.1rem !important;
     vertical-align: -10px;
@@ -69,11 +66,9 @@
 
 
 #google_translate_element {
-  /* border: 2px solid red; */
   position: absolute;
   bottom: calc(53px + 16px);
   right: 16px !important;
-  /* // z-index: 99999; */
 }
 
 .goog-te-gadget {
@@ -84,13 +79,8 @@
 }
 
 .goog-te-gadget-simple {
-  /* background-color: rgba(255,255,255,0.20)!important; */
   border: 1px solid rgba(255, 255, 255, 0.50) !important;
-  // padding: 8px!important; 
-  /* border-radius: 4px!important; */
   font-size: 0.5rem !important;
-  /* line-height:2rem!important; */
-  /* display: inline-block; */
   cursor: pointer;
   zoom: 1;
 }
@@ -105,8 +95,6 @@
 
   &:before {
     background-color: #000000 !important;
-    // font-family: 'Material Icons';
-    // content: "\E927";
     margin-right: 16px !important;
     font-size: 0.1rem !important;
     vertical-align: -10px;

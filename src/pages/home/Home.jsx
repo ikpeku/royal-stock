@@ -9,7 +9,7 @@ import TimeTestedInvestment from "./homeComponent/TimeTestedInvestment";
 import Banner2 from "./homeComponent/Banner2";
 import Reviews from "./homeComponent/Reviews";
 import GetInTouchBanner from "./homeComponent/GetInTouchBanner";
-import SocialIcons from "./homeComponent/SocialIcons";
+// import SocialIcons from "./homeComponent/SocialIcons";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
         <Banner2 />
         <Reviews />
         <GetInTouchBanner />
-        <SocialIcons />
+        {/* <SocialIcons /> */}
     </div>
   )
 }

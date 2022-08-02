@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsFacebook, BsTwitter, BsLinkedin, BsArrowRight, BsGlobe, BsKey, BsCurrencyBitcoin, BsAward, BsSearch, BsCash, BsWallet } from "react-icons/bs";
+import { BsArrowRight, BsGlobe, BsKey, BsCurrencyBitcoin, BsAward, BsSearch, BsCash, BsWallet } from "react-icons/bs";
 import { AllPhotos } from '../../contants';
 import "./About.scss"
 import { Link } from 'react-router-dom';
@@ -154,14 +154,6 @@ Trusting markets to do what they do best—drive information into prices—frees
           </div>
         </div>
 
-
-
-
-      <div className="About-logos">
-        <BsFacebook color='#1F4690' />
-        <BsTwitter color='#1F4690' />
-        <BsLinkedin color='#1F4690' />
-      </div>
 
     </div>
   )
