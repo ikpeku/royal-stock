@@ -34,6 +34,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </section>
+           
 
 
             <section className="md:h-[86px] bg-[#D9D9D9] flex flex-wrap justify-between mt-0 rounded-none md:mt-20 md:rounded-[50px]">
@@ -96,6 +97,8 @@ const Dashboard = () => {
 
                 </div>
             </section>
+
+            { toggleMenu && <div className='absolute w-full h-full bg-slate-100 opacity-75 md:hidden'></div>}
 
             <section className="mt-2 md:mt-20 mb-6 flex justify-between gap-8">
 
@@ -194,8 +197,8 @@ const Dashboard = () => {
 
 
                 {/* Toogle dashboard */}
-
-                {toggleMenu && <aside className="absolute block md:hidden bg-[#0C081C] w-full py-8 px-4 z-50">
+               
+                {toggleMenu && <aside className="absolute block md:hidden bg-[#0C081C] w-full py-8 px-4 z-50" onClick={() => setToggleMenu(false)}>
                     <ul>
                         <li className="text-[#231955] bg-[#FFFC85] flex items-center text-lg py-2 px-4 font-semibold  rounded-[20px]">
                             <svg className="w-6 h-6" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +209,7 @@ const Dashboard = () => {
                                 Dashboard
                             </span>
                         </li>
-                        <li onClick={() => setEditprof((prev) => !prev)} className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold">
+                        <li onClick={() => setEditprof((prev) => !prev)} className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold hover:bg-[#FFFC85] ">
                             <svg className="w-6 h-6" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.2345 0C11.8196 0 5.77034 5.98341 5.77034 13.3176C5.77034 17.9027 8.13618 21.9741 11.7215 24.3769C4.86055 27.2878 0 34.0227 0 41.8553H3.84689C3.84689 33.4272 10.7136 26.6352 19.2345 26.6352C23.3603 26.6352 27.0494 28.3075 29.8134 30.9159L20.7367 39.8938L20.6174 40.4874L19.2941 47.2071L18.694 50L21.5195 49.4064L28.3093 48.0975L28.9113 47.9795L48.3266 28.7755C50.5578 26.5686 50.5578 22.8968 48.3266 20.6899C47.2498 19.6334 45.7978 19.0358 44.2812 19.0247C42.7646 19.0137 41.3039 19.5902 40.2116 20.6309L32.5793 28.182C30.8837 26.5755 28.9079 25.2864 26.7475 24.3769C28.5776 23.1549 30.077 21.5078 31.1145 19.5798C32.152 17.6518 32.6959 15.5017 32.6986 13.3176C32.6986 5.98341 26.6494 0 19.2345 0ZM19.2345 3.80503C24.5682 3.80503 28.8517 8.04193 28.8517 13.3176C28.8517 18.5933 24.5682 22.8302 19.2345 22.8302C13.9008 22.8302 9.61723 18.5933 9.61723 13.3176C9.61723 8.04193 13.9008 3.80503 19.2345 3.80503ZM44.2393 22.8302C44.7278 22.8302 45.2395 22.9862 45.6222 23.3648C45.8038 23.5382 45.9483 23.7459 46.0469 23.9757C46.1456 24.2055 46.1964 24.4526 46.1964 24.7023C46.1964 24.9519 46.1456 25.199 46.0469 25.4288C45.9483 25.6586 45.8038 25.8664 45.6222 26.0397L26.9879 44.4713L23.5622 45.1847L24.2835 41.7964L42.9179 23.3648C43.0895 23.1911 43.2953 23.054 43.5226 22.9621C43.7499 22.8701 43.9938 22.8252 44.2393 22.8302Z" fill="#1F4690" />
                             </svg>
@@ -217,7 +220,7 @@ const Dashboard = () => {
                         </li>
                         {editprof && <p className='text-white text-center w-full'>action not supported</p>}
 
-                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold">
+                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold hover:bg-[#FFFC85]">
                             <svg className="w-6 h-6" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M47.7273 0H2.27273C1.66996 0 1.09189 0.263392 0.665666 0.732233C0.239447 1.20107 0 1.83696 0 2.5V22.5C0 23.163 0.239447 23.7989 0.665666 24.2678C1.09189 24.7366 1.66996 25 2.27273 25H9.09091V47.5C9.09091 48.163 9.33036 48.7989 9.75658 49.2678C10.1828 49.7366 10.7609 50 11.3636 50H38.6364C39.2391 50 39.8172 49.7366 40.2434 49.2678C40.6696 48.7989 40.9091 48.163 40.9091 47.5V25H47.7273C48.33 25 48.9081 24.7366 49.3343 24.2678C49.7606 23.7989 50 23.163 50 22.5V2.5C50 1.83696 49.7606 1.20107 49.3343 0.732233C48.9081 0.263392 48.33 0 47.7273 0ZM13.6364 45V40C14.8419 40 15.998 40.5268 16.8505 41.4645C17.7029 42.4021 18.1818 43.6739 18.1818 45H13.6364ZM36.3636 45H31.8182C31.8182 43.6739 32.2971 42.4021 33.1495 41.4645C34.002 40.5268 35.1581 40 36.3636 40V45ZM36.3636 35C33.9526 35 31.6403 36.0536 29.9354 37.9289C28.2305 39.8043 27.2727 42.3478 27.2727 45H22.7273C22.7273 42.3478 21.7695 39.8043 20.0646 37.9289C18.3597 36.0536 16.0474 35 13.6364 35V15H36.3636V35ZM45.4545 20H40.9091V12.5C40.9091 11.837 40.6696 11.2011 40.2434 10.7322C39.8172 10.2634 39.2391 10 38.6364 10H11.3636C10.7609 10 10.1828 10.2634 9.75658 10.7322C9.33036 11.2011 9.09091 11.837 9.09091 12.5V20H4.54545V5H45.4545V20ZM25 32.5C26.3485 32.5 27.6667 32.0601 28.788 31.236C29.9092 30.4119 30.7831 29.2406 31.2992 27.8701C31.8152 26.4997 31.9503 24.9917 31.6872 23.5368C31.4241 22.082 30.7747 20.7456 29.8212 19.6967C28.8676 18.6478 27.6528 17.9335 26.3302 17.6441C25.0076 17.3547 23.6367 17.5032 22.3908 18.0709C21.1449 18.6386 20.0801 19.5999 19.3309 20.8332C18.5817 22.0666 18.1818 23.5166 18.1818 25C18.1818 26.9891 18.9002 28.8968 20.1788 30.3033C21.4575 31.7098 23.1917 32.5 25 32.5ZM25 22.5C25.4495 22.5 25.8889 22.6466 26.2627 22.9213C26.6364 23.196 26.9277 23.5865 27.0997 24.0433C27.2717 24.5001 27.3168 25.0028 27.2291 25.4877C27.1414 25.9727 26.9249 26.4181 26.6071 26.7678C26.2892 27.1174 25.8843 27.3555 25.4434 27.452C25.0025 27.5484 24.5456 27.4989 24.1303 27.3097C23.715 27.1205 23.36 26.8 23.1103 26.3889C22.8606 25.9778 22.7273 25.4945 22.7273 25C22.7273 24.337 22.9667 23.7011 23.3929 23.2322C23.8192 22.7634 24.3972 22.5 25 22.5Z" fill="#1F4690" />
                             </svg>
@@ -227,7 +230,7 @@ const Dashboard = () => {
                             </span>
                         </li>
 
-                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold">
+                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold hover:bg-[#FFFC85]">
                             <svg className="w-6 h-6" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.525 39.8352C10.5531 39.8081 14.0239 36.5384 14.0239 32.4727C14.0239 29.6706 12.425 26.8936 10.7323 23.9529C8.80832 20.6113 6.81978 17.1561 6.81978 13.1092C6.76283 12.0355 6.92613 10.9616 7.29964 9.9534C7.67314 8.94521 8.24895 8.02408 8.99166 7.24668C9.14791 7.06127 9.30936 6.87377 9.46561 6.66648C9.84548 6.1656 10.4088 5.83615 11.0315 5.75058C11.6543 5.66502 12.2856 5.83036 12.7864 6.21023C13.2873 6.59009 13.6168 7.15337 13.7023 7.77615C13.7879 8.39893 13.6226 9.03019 13.2427 9.53106C13.0323 9.8071 12.8187 10.0623 12.6073 10.3102C12.2288 10.6647 11.9372 11.1018 11.7555 11.5875C11.5737 12.0732 11.5066 12.5943 11.5594 13.1102C11.5594 15.8904 13.1531 18.6581 14.8406 21.5894C16.7677 24.9404 18.7635 28.405 18.7635 32.4727C18.7422 34.4304 18.2913 36.3595 17.4427 38.1238" stroke="#1F4690" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M13.6667 7.5791C13.675 7.6166 14.7917 12.252 18.323 14.2697C20.7552 15.6593 23.9584 15.6468 27.3532 15.6385C31.2042 15.6208 35.1948 15.6124 38.7073 17.6197C39.6681 18.1028 40.5198 18.7774 41.21 19.602C41.9003 20.4266 42.4144 21.3837 42.7209 22.4145C42.8042 22.6426 42.8875 22.8749 42.9896 23.1124C43.1154 23.3993 43.183 23.7082 43.1886 24.0213C43.1942 24.3345 43.1377 24.6456 43.0223 24.9368C42.907 25.228 42.735 25.4934 42.5164 25.7177C42.2979 25.942 42.037 26.1207 41.7489 26.2436C41.4608 26.3665 41.1513 26.431 40.8381 26.4335C40.5249 26.436 40.2143 26.3764 39.9243 26.2582C39.6343 26.1399 39.3706 25.9653 39.1485 25.7445C38.9264 25.5237 38.7502 25.2611 38.6302 24.9718C38.4938 24.652 38.3802 24.3406 38.2677 24.0343C38.1477 23.5298 37.9128 23.0598 37.5812 22.661C37.2497 22.2622 36.8304 21.9454 36.3563 21.7354C33.9438 20.3562 30.75 20.3645 27.3677 20.3781C23.499 20.3854 19.5032 20.4031 15.9719 18.3854C14.2534 17.3778 12.7809 15.9999 11.6615 14.352" stroke="#1F4690" stroke-linecap="round" stroke-linejoin="round" />
@@ -239,7 +242,7 @@ const Dashboard = () => {
                             </span>
                         </li>
 
-                        <li onClick={() => setReferrals((prev) => !prev)} className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold">
+                        <li onClick={() => setReferrals((prev) => !prev)} className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold hover:bg-[#FFFC85]">
                             <svg className="w-6 h-6" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24.8611 24.0279C28.6111 24.0279 31.5278 20.9723 31.5278 17.2223C31.5278 13.4723 28.4722 10.5557 24.7222 10.5557C20.9722 10.5557 18.0555 13.6112 18.0555 17.2223C18.0555 20.9723 21.1111 24.0279 24.8611 24.0279ZM24.7222 13.3334C24.8611 13.3334 24.8611 13.3334 24.7222 13.3334C26.9444 13.3334 28.75 15.139 28.75 17.3612C28.75 19.5834 26.9444 21.2501 24.7222 21.2501C22.5 21.2501 20.8333 19.4446 20.8333 17.3612C20.8333 15.139 22.6389 13.3334 24.7222 13.3334Z" fill="#1F4690" />
                                 <path d="M45.4167 23.1946C42.7778 20.8335 39.3056 19.5835 35.6945 19.7224H34.5834C34.3056 20.8335 33.8889 21.8057 33.3334 22.639C34.1667 22.5001 34.8612 22.5001 35.6945 22.5001C38.3334 22.3613 40.9723 23.1946 43.0556 24.7224V34.7224H45.8334V23.6113L45.4167 23.1946Z" fill="#1F4690" />
@@ -256,7 +259,7 @@ const Dashboard = () => {
                         </li>
                         {referrals && <p className='text-white text-center w-full'>action not supported</p>}
 
-                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold">
+                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold hover:bg-[#FFFC85]">
                             <svg className="w-6 h-6 invisible" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24.8611 24.0279C28.6111 24.0279 31.5278 20.9723 31.5278 17.2223C31.5278 13.4723 28.4722 10.5557 24.7222 10.5557C20.9722 10.5557 18.0555 13.6112 18.0555 17.2223C18.0555 20.9723 21.1111 24.0279 24.8611 24.0279ZM24.7222 13.3334C24.8611 13.3334 24.8611 13.3334 24.7222 13.3334C26.9444 13.3334 28.75 15.139 28.75 17.3612C28.75 19.5834 26.9444 21.2501 24.7222 21.2501C22.5 21.2501 20.8333 19.4446 20.8333 17.3612C20.8333 15.139 22.6389 13.3334 24.7222 13.3334Z" fill="#1F4690" />
                                 <path d="M45.4167 23.1946C42.7778 20.8335 39.3056 19.5835 35.6945 19.7224H34.5834C34.3056 20.8335 33.8889 21.8057 33.3334 22.639C34.1667 22.5001 34.8612 22.5001 35.6945 22.5001C38.3334 22.3613 40.9723 23.1946 43.0556 24.7224V34.7224H45.8334V23.6113L45.4167 23.1946Z" fill="#1F4690" />
@@ -271,7 +274,7 @@ const Dashboard = () => {
                             </span>
                         </li>
 
-                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold">
+                        <li className="text-[#231955] flex items-center text-lg mt-4 bg-[#CCCCCC] py-2 px-4 font-semibold hover:bg-[#FFFC85]">
                             <svg className="w-6 h-6" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M50 25L33.3333 11.1111V19.4444H13.8889V30.5556H33.3333V38.8889L50 25ZM5.55556 5.55556H27.7778V0H5.55556C2.5 0 0 2.5 0 5.55556V44.4444C0 47.5 2.5 50 5.55556 50H27.7778V44.4444H5.55556V5.55556Z" fill="#1F4690" />
                             </svg>
@@ -360,7 +363,7 @@ const Dashboard = () => {
 
                         <div className="flex flex-wrap justify-between mt-10 gap-y-8 md:gap-y-16">
 
-                            <div className="bg-[#FFFC85] text-center w-full md:w-[10rem] pb-5">
+                            <div className="bg-white hover:bg-[#FFFC85] text-center w-full md:w-[10rem] pb-5">
                                 <div className="flex justify-center -mt-5">
                                     <img src={BTCImg} alt="dash-board" />
                                 </div>
@@ -373,7 +376,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
 
-                            <div className="bg-white text-center w-full md:w-[10rem] pb-5">
+                            <div className="bg-white hover:bg-[#FFFC85] text-center w-full md:w-[10rem] pb-5">
                                 <div className="flex justify-center -mt-5">
                                     <img src={USDTImg} alt="dash-board" />
                                 </div>
@@ -386,7 +389,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
 
-                            <div className="bg-white text-center w-full md:w-[10rem] pb-5">
+                            <div className="bg-white hover:bg-[#FFFC85] text-center w-full md:w-[10rem] pb-5">
                                 <div className="flex justify-center -mt-5">
                                     <img src={BNBImg} alt="dash-board" />
                                 </div>
@@ -399,7 +402,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
 
-                            <div className="bg-white text-center w-full md:w-[10rem] pb-5">
+                            <div className="bg-white hover:bg-[#FFFC85] text-center w-full md:w-[10rem] pb-5">
                                 <div className="flex justify-center -mt-5">
                                     <img src={ETHImg} alt="dash-board" />
                                 </div>
@@ -440,12 +443,12 @@ const Dashboard = () => {
 
             </section>
 
-            <section className='chartSection bg-[#6C668E] w-full pb-5 md:relative md:pb-52 md:mb-80 '>
+            <section className='chartSection bg-[#6C668E] w-full pb-5 md:relative md:pb-52 md:mb-80'>
                 <h3 className='text-center text-5xl tracking-{20px} text-white py-10'>Market Chart</h3>
-                <div class="px-4 md:absolute ml-auto mr-auto left-0 right-0 text-center md:w-2/3 ">
-                    <div class=" ml-auto mr-auto text-center" style={{ overflow: "hidden" }}>
+                <div class=" md:absolute ml-auto mr-auto left-0 right-0 text-center md:w-5/6 ">
+                    <div class=" ml-auto mr-auto text-center overflow-hidden">
                         {/* eslint-disable-next-line */}
-                        <iframe src="https://www.widgets.investing.com/top-cryptocurrencies?theme=darkTheme&amp;roundedCorners=true" allowtransparency="true" marginwidth="0" marginheight="0" width="1070" height="575" frameborder="0" style={{ marginTop: "-50px" }}></iframe>
+                        <iframe src="https://www.widgets.investing.com/top-cryptocurrencies?theme=darkTheme&amp;roundedCorners=true" allowtransparency="true" marginwidth="0" marginheight="0" height="575" frameborder="0" style={{ marginTop: "-50px" }} className="w-full" ></iframe>
 
                     </div>
                 </div>

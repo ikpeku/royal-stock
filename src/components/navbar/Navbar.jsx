@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import { AllPhotos } from '../../contants';
 import "./Navbar.scss"
 import { NavLink, Link } from 'react-router-dom';
@@ -7,12 +7,13 @@ import { RiUser3Fill } from "react-icons/ri";
 
 
 
-const Navbar = () => {
+const Navbar = ({toggle, setToggle}) => {
 
-    const [toggle, setToggle] = useState(false)
+   
 
     return (
         <header className="bg-[#D3D1DD] home-navbar md:h-[132px] relative">
+           
             <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto ">
                 <div className="flex justify-between pt-4">
 
@@ -102,6 +103,7 @@ const Navbar = () => {
                 </div>
             </div>
 
+            
 
             {
                 toggle && <div className="min-h-screen bg-gray-100 absolute z-50 w-1/2 md:hidden" onClick={() => setToggle(false)}>

@@ -1,12 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Home, About, Contact, Faq, Notfound, Signin, Signup, Dashboard, Agreement } from './pages';
 import { Route, Routes } from 'react-router-dom';
 import { Cert, Footer, Navbar, Social } from './components';
 
 const App = () => {
+  const [toggle, setToggle] = useState(false)
+
+
   return (
     <div className='relative'>
-      <Navbar />
+      <Navbar toggle={toggle} setToggle={setToggle} />
+      { toggle && <div className='absolute w-full h-full z-40 bg-slate-100 opacity-75 md:hidden'></div>}
       <Social />
       <Routes>
         <Route path='/' element={<Home />} />
