@@ -15,7 +15,7 @@ const Faq = () => {
 
   return (
     <div id='#faq'>
-      <div className="faq-dash">
+      <div className="faq-dash ">
         <h6>
           Freqently Asked Questions
         </h6>
@@ -23,12 +23,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList1(list1 === false ? true : false)}>
         {list1 && <div className='drops-container'>
-          <h6>How do I invest?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How do I invest?</h6>
           <MdArrowDropDown onClick={() => setList1(false)} className="menu" size={30} />
         </div>}
 
         {!list1 && <div className='drops-container'>
-          <h6>How do I invest?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How do I invest?</h6>
           <MdArrowDropUp onClick={() => setList1(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             To make an investment you have to create an account either as a private or
@@ -41,12 +41,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList2(list2 === false ? true : false)}>
         {list2 && <div className='drops-container'>
-          <h6>Does the fund charge any fees?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>Does the fund charge any fees?</h6>
           <MdArrowDropDown onClick={() => setList2(false)} className="menu" size={30} />
         </div>}
 
         {!list2 && <div className='drops-container'>
-          <h6>Does the fund charge any fees?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>Does the fund charge any fees?</h6>
           <MdArrowDropUp onClick={() => setList2(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             The fund charges a 5% profit fee, the only way we can make money is if you profit from
@@ -57,12 +57,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList3(list3 === false ? true : false)}>
         {list3 && <div className='drops-container'>
-          <h6>What is the withdrawal process time?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>What is the withdrawal process time?</h6>
           <MdArrowDropDown onClick={() => setList3(false)} className="menu" size={30} />
         </div>}
 
         {!list3 && <div className='drops-container'>
-          <h6>What is the withdrawal process time?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>What is the withdrawal process time?</h6>
           <MdArrowDropUp onClick={() => setList3(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             After you have submitted a withdrawal, it will take 24h for the fund to liquidate your
@@ -73,12 +73,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList4(list4 === false ? true : false)}>
         {list4 && <div className='drops-container'>
-          <h6>What are your average returns?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>What are your average returns?</h6>
           <MdArrowDropDown onClick={() => setList4(false)} className="menu" size={30} />
         </div>}
 
         {!list4 && <div className='drops-container'>
-          <h6>What are your average returns?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>What are your average returns?</h6>
           <MdArrowDropUp onClick={() => setList4(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             Although there are no guarantees, estimate to receive around 11.5% to 22.5% of your
@@ -89,12 +89,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList5(list5 === false ? true : false)}>
         {list5 && <div className='drops-container'>
-          <h6>How is profit calculated?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How is profit calculated?</h6>
           <MdArrowDropDown onClick={() => setList5(false)} className="menu" size={30} />
         </div>}
 
         {!list5 && <div className='drops-container'>
-          <h6>How is profit calculated?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How is profit calculated?</h6>
           <MdArrowDropUp onClick={() => setList5(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             All profits are calculated in Bitcoin, which means Royal Stock-Shell’s objective is to
@@ -105,12 +105,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList6(list6 === false ? true : false)}>
         {list6 && <div className='drops-container'>
-          <h6>Who we are?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>Who we are?</h6>
           <MdArrowDropDown onClick={() => setList6(false)} className="menu" size={30} />
         </div>}
 
         {!list6 && <div className='drops-container'>
-          <h6>Who we are?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>Who we are?</h6>
           <MdArrowDropUp onClick={() => setList6(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             Royal Stock-Shell is an online investment platform specialized in trading the financial
@@ -122,12 +122,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList7(list7 === false ? true : false)}>
         {list7 && <div className='drops-container'>
-          <h6>How secure are my funds if the market Crash?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How secure are my funds if the market Crash?</h6>
           <MdArrowDropDown onClick={() => setList7(false)} className="menu" size={30} />
         </div>}
 
         {!list7 && <div className='drops-container'>
-          <h6>How secure are my funds if the market Crash?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How secure are my funds if the market Crash?</h6>
           <MdArrowDropUp onClick={() => setList7(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             There are money-back guarantees depending on the plan you subscribe for. We have a
@@ -138,12 +138,12 @@ const Faq = () => {
 
       <div className='drops' onClick={() => setList8(list8 === false ? true : false)}>
         {list8 && <div className='drops-container'>
-          <h6>How can I withdraw funds?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How can I withdraw funds?</h6>
           <MdArrowDropDown onClick={() => setList8(false)} className="menu" size={30} />
         </div>}
 
         {!list8 && <div className='drops-container'>
-          <h6>How can I withdraw funds?</h6>
+          <h6 className='text-[#231955] text-xl font-bold w-4/5'>How can I withdraw funds?</h6>
           <MdArrowDropUp onClick={() => setList8(true)} className="menu" size={30} />
           <p className='w-full md:w-4/5'>
             Login to your account using your username and password and check the withdraw
