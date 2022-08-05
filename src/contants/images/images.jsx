@@ -10,8 +10,11 @@ import reliable from "../../assets/reliable.png";
 import imgcontain from "../../assets/img-contain.png";
 import aboutFooter from "../../assets/about-footer.png";
 import faqDash from "../../assets/faq-dash.png";
+import cert from "../../assets/cert.jpeg";
 
 
-const photos = { Logo, Home, Key, Dash, contactDash, aboutDash, tradeVideo, portFolio, reliable, imgcontain, aboutFooter, faqDash}
+
+
+const photos = { Logo, Home, Key, Dash, contactDash, aboutDash, tradeVideo, portFolio, reliable, imgcontain, aboutFooter, faqDash, cert}
 
 export default photos;

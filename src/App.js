@@ -1,15 +1,17 @@
 import React from 'react'
-import { Home, About, Contact, Faq, Notfound, Signin, Signup, Dashboard , Agreement } from './pages';
+import { Home, About, Contact, Faq, Notfound, Signin, Signup, Dashboard, Agreement } from './pages';
 import { Route, Routes } from 'react-router-dom';
-import { Footer, Navbar } from './components';
+import { Cert, Footer, Navbar, Social } from './components';
 
 const App = () => {
   return (
-    <div>
+    <div className='relative'>
       <Navbar />
+      <Social />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/cert' element={<Cert />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/faq' element={<Faq />} />
         <Route path='/signin' element={<Signin />} />

@@ -5,16 +5,16 @@ import TimeTestedImg from "../../../assets/investment-data/amico.png";
 const TimeTestedInvestment = () => {
     return (
         <section>
-            <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto xl:py-16">
-                <div className="grid grid-cols-1 gap-8 sm:gap-16 sm:grid-cols-2 py-16">
+            <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto xl:py-8">
+                <div className="grid grid-cols-1 gap-8 sm:gap-16 sm:grid-cols-2 py-0">
                     <div
-                        className="relative h-[40vh] xl:h-[80vh] overflow-hidden rounded-lg md:order-last flex justify-end"
+                        className="relative h-[40vh] xl:h-[80vh] overflow-hidden rounded-lg md:order-last flex justify-end "
                     >
                         <img src={TimeTestedImg} alt="Staff having a meeting" className="absolute xl:right-0 object-[75%] sm:object-[25%] object-cover w-[75%]" />
                     </div>
 
                     <div className="flex flex-col xl:justify-end">
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#231955] xl:mt-80">Time tested investment methods</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#231955] xl:mt-40">Time tested investment methods</h2>
 
                         <p className="mt-2 text-[#918CAA] italic">
                             Our team of independent financial advisors will work with you

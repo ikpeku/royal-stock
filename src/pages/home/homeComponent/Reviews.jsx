@@ -7,11 +7,11 @@ import Ellipse6Img from "../../../assets/Ellipse6.png";
 const Reviews = () => {
     return (
         <section>
-            <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto xl:py-16">
+            <div className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto xl:py-8 ">
                 <h3 className="text-center text-[#231955] font-bold text-4xl">Reviews from some of our top investors..</h3>
 
-                <div className="mt-8 sm:mt-12 lg:mt-20">
-                    <dl className="flex flex-wrap justify-between space-y-10">
+                <div className="mt-8 sm:mt-12 lg:mt-10">
+                    <dl className="flex flex-wrap justify-between space-y-10 md:space-y-0 ">
                         <div className="max-w-xs">
                             <div className="flex items-baseline">
                                 <img src={Ellipse3Img} alt="Staff having a meeting" className="w-20 h-20" />

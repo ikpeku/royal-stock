@@ -3,6 +3,7 @@ import { AllPhotos } from '../../contants';
 import "./Navbar.scss"
 import { NavLink, Link } from 'react-router-dom';
 import { FiHome, FiMail, FiX } from "react-icons/fi";
+import { RiUser3Fill } from "react-icons/ri";
 
 
 
@@ -31,33 +32,38 @@ const Navbar = () => {
                         <nav className="hidden md:block" aria-labelledby="header-navigation">
                             {/* <h2 className="sr-only" id="header-navigation"></h2> */}
 
-                            <ul className="flex justify-between items-end gap-6 h-full ">
-                                <li>
+                            <ul className="flex justify-between items-end gap-10 h-full ">
+                                <li className='mr-10'>
                                     <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : "not-active"}>
                                         Home
                                     </NavLink>
                                 </li>
-                                <li>
+                                <li className='mr-10'>
                                     <NavLink to="/about"
                                         className={({ isActive }) => isActive ? "active-link" : "not-active"}
                                     >About</NavLink>
                                 </li>
-                                <li>
+                                <li className='mr-10'>
                                     <NavLink to="/faq"
                                         className={({ isActive }) => isActive ? "active-link" : "not-active"}
                                     >FAQ</NavLink>
                                 </li>
-                                <li>
+                                <li className='mr-10'>
                                     <NavLink to="/contact"
                                         className={({ isActive }) => isActive ? "active-link" : "not-active"}
                                     >Contact</NavLink>
+                                </li>
+                                <li className='mr-10'>
+                                    <NavLink to="/dashboard"
+                                        className={({ isActive }) => isActive ? "active-link" : "not-active"}
+                                    >Dashboard</NavLink>
                                 </li>
 
                             </ul>
                         </nav>
 
                         {
-                            !toggle && <div className="block md:hidden flex justify-end pt-3">
+                            !toggle && <div className="sm:block md:hidden flex justify-end pt-3">
                                 <button
                                     className="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75"
 
@@ -82,7 +88,7 @@ const Navbar = () => {
                         }
 
                         {toggle
-                            && <div>
+                            && <div className='md:hidden'>
                                 <FiX size={40} onClick={() => setToggle(false)}
                                     className="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75"
                                 />
@@ -98,7 +104,7 @@ const Navbar = () => {
 
 
             {
-                toggle && <div className="min-h-screen bg-gray-100 absolute z-50 w-1/2" onClick={() => setToggle(false)}>
+                toggle && <div className="min-h-screen bg-gray-100 absolute z-50 w-1/2 md:hidden" onClick={() => setToggle(false)}>
                     <div className="flex h-screen flex-col justify-between pt-2 pb-6">
                         <div>
                             <div className="w-max p-2.5">
@@ -153,6 +159,16 @@ const Navbar = () => {
                                         onClick={() => setToggle(false)}>
                                         <FiMail />
                                         <span className="group-hover:text-gray-700">Contact</span>
+                                    </NavLink>
+                                </li>
+                                <li className="min-w-max">
+                                    <NavLink to="/dashboard"
+                                        className={({ isActive }) => isActive ? "relative flex items-center space-x-4 bg-gradient-to-r from-sky-600 to-cyan-400 px-4 py-3 text-white"
+                                            : "bg group flex items-center space-x-4 rounded-full px-4 py-3 text-gray-600"
+                                        }
+                                        onClick={() => setToggle(false)}>
+                                        <RiUser3Fill />
+                                        <span className="group-hover:text-gray-700">Dashboard</span>
                                     </NavLink>
                                 </li>
 

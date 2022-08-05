@@ -5,7 +5,7 @@ import { AllPhotos } from '../../contants';
 
 const Agreement = () => {
     return (
-        <div>
+        <div id='#agreement' >
 
             <div className='Agreement-image__dash w-full h-100 min-h-full'>
                 <img src={AllPhotos.Dash} alt="dash-board" className='w-full' />

@@ -14,14 +14,14 @@ const Faq = () => {
   const [list8, setList8] = useState(true)
 
   return (
-    <div>
+    <div id='#faq'>
       <div className="faq-dash">
         <h6>
           Freqently Asked Questions
         </h6>
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList1(list1 === false ? true : false)}>
         {list1 && <div className='drops-container'>
           <h6>How do I invest?</h6>
           <MdArrowDropDown onClick={() => setList1(false)} className="menu" size={30} />
@@ -39,7 +39,7 @@ const Faq = () => {
         </div>}
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList2(list2 === false ? true : false)}>
         {list2 && <div className='drops-container'>
           <h6>Does the fund charge any fees?</h6>
           <MdArrowDropDown onClick={() => setList2(false)} className="menu" size={30} />
@@ -55,7 +55,7 @@ const Faq = () => {
         </div>}
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList3(list3 === false ? true : false)}>
         {list3 && <div className='drops-container'>
           <h6>What is the withdrawal process time?</h6>
           <MdArrowDropDown onClick={() => setList3(false)} className="menu" size={30} />
@@ -71,7 +71,7 @@ const Faq = () => {
         </div>}
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList4(list4 === false ? true : false)}>
         {list4 && <div className='drops-container'>
           <h6>What are your average returns?</h6>
           <MdArrowDropDown onClick={() => setList4(false)} className="menu" size={30} />
@@ -87,7 +87,7 @@ const Faq = () => {
         </div>}
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList5(list5 === false ? true : false)}>
         {list5 && <div className='drops-container'>
           <h6>How is profit calculated?</h6>
           <MdArrowDropDown onClick={() => setList5(false)} className="menu" size={30} />
@@ -103,7 +103,7 @@ const Faq = () => {
         </div>}
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList6(list6 === false ? true : false)}>
         {list6 && <div className='drops-container'>
           <h6>Who we are?</h6>
           <MdArrowDropDown onClick={() => setList6(false)} className="menu" size={30} />
@@ -120,7 +120,7 @@ const Faq = () => {
         </div>}
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList7(list7 === false ? true : false)}>
         {list7 && <div className='drops-container'>
           <h6>How secure are my funds if the market Crash?</h6>
           <MdArrowDropDown onClick={() => setList7(false)} className="menu" size={30} />
@@ -136,7 +136,7 @@ const Faq = () => {
         </div>}
       </div>
 
-      <div className='drops'>
+      <div className='drops' onClick={() => setList8(list8 === false ? true : false)}>
         {list8 && <div className='drops-container'>
           <h6>How can I withdraw funds?</h6>
           <MdArrowDropDown onClick={() => setList8(false)} className="menu" size={30} />

@@ -2,11 +2,19 @@ import React from 'react'
 import { BsArrowRight, BsGlobe, BsKey, BsCurrencyBitcoin, BsAward, BsSearch, BsCash, BsWallet } from "react-icons/bs";
 import { AllPhotos } from '../../contants';
 import "./About.scss"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Card } from '../../components';
 import { MdOutlinePersonalInjury, MdTrendingUp } from "react-icons/md";
 
 const About = () => {
+  const navigate = useNavigate()
+
+  const ViewCert = () => {
+    navigate("/cert")
+  }
+
+
+
   return (
     <div id='about-page'>
 
@@ -33,7 +41,7 @@ const About = () => {
             and financial objectives in life and
             generations to come.
           </p>
-          <Link to="/"><button>Our Servives < BsArrowRight  size={30}/></button></Link>
+          <Link to="/"><button>Our Services < BsArrowRight  size={30}/></button></Link>
 
         </div>
 
@@ -71,7 +79,7 @@ const About = () => {
           </div>
         </div>
         <div className='about-btn-container'>
-          <button>View Certificate</button>
+          <button onClick={ViewCert} >View Certificate</button>
         </div>
 
       </div>

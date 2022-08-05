@@ -2,9 +2,9 @@ import React from 'react';
 
 const AssetManagement = () => {
     return (
-            <section className="max-w-screen-2xl px-4 sm:px-6 lg:px-8 mx-auto py-16">
-                <div className="grid grid-cols-1 gap-8 mt-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-4">
-                    <article className="flex group items-start p-8 border p-8 border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
+            <section className="max-w-screen-3xl px-4 sm:px-6 lg:px-8 mx-auto py-4">
+                <div className="grid grid-cols-1 gap-3 mt-1 md:gap-12 md:mt-0 md:grid-cols-2 lg:grid-cols-4">
+                    <article className="border-[#231955] flex group items-start border p-8 md:border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
                         <div className="mt-4">
 
                             <svg className="text-[231955] group-hover:text-white" width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ const AssetManagement = () => {
                         </div>
                     </article>
 
-                    <article className="flex group items-start border p-8 border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
+                    <article className="border-[#231955] flex group items-start border p-8 md:border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
                         <div className="mt-4">
 
                             <svg className="text-[231955] group-hover:text-white" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ const AssetManagement = () => {
                             </p>
                         </div>
                     </article>
-                    <article className="flex group items-start border p-8 border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
+                    <article className="border-[#231955] flex group items-start border p-8 md:border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
                         <div className="mt-4">
 
                             <svg className="text-[231955] group-hover:text-white" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@ const AssetManagement = () => {
                             </p>
                         </div>
                     </article>
-                    <article className="flex group items-start border p-8 border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
+                    <article className="border-[#231955] flex group items-start border p-8 md:border-white rounded-[50px] bg-white hover:border-[#231955] hover:bg-[#231955]">
                         <div className="mt-4">
 
                             <svg className="text-[231955] group-hover:text-white" width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg">

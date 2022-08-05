@@ -15,7 +15,8 @@
 }
 
 
- .goog-te-gadget-simple img,
+#goog-gt-tt,
+.goog-te-gadget-simple img,
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
 }
@@ -23,6 +24,7 @@
 .goog-te-gadget-simple {
   height: 35px;
 }
+
 .goog-te-menu-value {
   font-weight: 800;
   //font-size: 24px;
@@ -33,17 +35,19 @@
 }
 
 .goog-tooltip {
-    display: none !important;
+  display: none !important;
 }
 
 .goog-tooltip:hover {
-    display: none !important;
+  display: none !important;
 }
+
 .goog-text-highlight {
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
+
 .goog-te-gadget {
   font-family: Roboto, 'Open Sans', sans-serif !important;
   text-transform: capitalize !important;
