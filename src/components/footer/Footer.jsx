@@ -40,24 +40,24 @@ const Footer = () => {
                     Financial News
                   </li>
                   <li>
-                    <Link to='/' className="">
+                    <a href='https://www.ft.com/cryptofinance' className="">
                       Financial Times
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to='/' className="">
+                    <a href='https://www.wsj.com/' className="">
                       The Wall Street Journal
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to='/' className="">
+                    <a href='https://www.bloomberg.com/crypto' className="">
                       Bloomberg
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to='/' className="">
+                    <a href='https://www.zerohedge.com/' className="">
                       Zero Hedge
-                    </Link>
+                    </a>
                   </li>
                 </ul>
 
