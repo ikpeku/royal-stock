@@ -13,7 +13,7 @@ const GetInTouchBanner = () => {
                         Would <span className="text-white bg-[#231955]">you like to speak with our consultant</span>s first?
                     </p>
 
-                    <Link to="/signin" className="mt-[7rem] md:mt-[6rem] mb-5 inline-block px-4 md:px-12 py-3 text-lg font-bold bg-white rounded-[50px] text-[#231955] sm:w-auto focus:outline-none focus:ring-0 hover:invert-[.10]">
+                    <Link to="/contact" className="mt-[7rem] md:mt-[6rem] mb-5 inline-block px-4 md:px-12 py-3 text-lg font-bold bg-white rounded-[50px] text-[#231955] sm:w-auto focus:outline-none focus:ring-0 hover:invert-[.10]">
                         <button>
                             Get in touch
                         </button>
