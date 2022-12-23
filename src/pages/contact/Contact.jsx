@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <div id='contact-page'>
       <div className='contact-image__dash'>
-        <img src={AllPhotos.contactDash} alt="dash-board" />
+        <img src={AllPhotos.contactDash} alt="dash-board" className='object-cover w-full' />
         <div className='contact-modal'>
           <p className='text-white text-center font-bold text-xl md:text-2xl'>Contact our support team</p>
         </div>
